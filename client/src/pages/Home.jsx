@@ -69,9 +69,6 @@ const Home = () => {
       >
         <News />
       </motion.div>
-
-      {/* Footer typically doesn't need scroll animation */}
-      <Footer />
     </div>
   );
 };
