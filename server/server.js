@@ -15,8 +15,10 @@ const PORT = process.env.PORT || 7000;
 app.use(cors());
 app.use(express.json());
 
+await connectDB();
+
 // Routes
-app.get("/", (req, res) => {
+app.get("/", (req, res, next) => {
   res.send("Server is running");
 });
 
@@ -41,7 +43,6 @@ process.on("unhandledRejection", (err) => {
 // Start server only if DB connects successfully
 const startServer = async () => {
   try {
-    await connectDB();
     app.listen(PORT, () => {
       console.log(`✅ Server running on http://localhost:${PORT}`);
     });
