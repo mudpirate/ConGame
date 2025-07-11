@@ -32,7 +32,6 @@ const Home = () => {
 
       <motion.div
         variants={sectionFade}
-        initial="hidden"
         whileInView="show"
         transition={{ duration: 0.6, delay: 0.1 }}
         viewport={{ once: true, amount: 0.3 }}
