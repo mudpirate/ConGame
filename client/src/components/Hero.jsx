@@ -111,24 +111,6 @@ const Hero = () => {
           reliable service no matter where you are. As we continue to grow,
           we're expanding into even more locations to serve you better.
         </p>
-
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 w-full sm:w-auto">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-black font-bold bg-green-400 p-2 sm:p-3 rounded-3xl text-sm sm:text-base w-full sm:w-auto"
-          >
-            Limited offer
-          </motion.button>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-white font-bold bg-black p-2 sm:p-3 border-2 border-gray-100 rounded-3xl text-sm sm:text-base w-full sm:w-auto"
-          >
-            Rent Now
-          </motion.button>
-        </div>
       </motion.div>
     </div>
   );

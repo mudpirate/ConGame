@@ -52,7 +52,7 @@ const MyBookings = () => {
 
   if (loading) {
     return (
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10 bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10  min-h-screen">
         <div className="flex items-center justify-center h-48 sm:h-64">
           <div className="animate-spin rounded-full h-10 w-10 sm:h-12 sm:w-12 border-b-2 border-blue-500"></div>
         </div>
@@ -62,7 +62,7 @@ const MyBookings = () => {
 
   if (error) {
     return (
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10 bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10 min-h-screen">
         <div className="text-center py-12 sm:py-16">
           <div className="bg-red-500/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 max-w-md mx-auto border border-red-500/20">
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-red-400 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -97,7 +97,7 @@ const MyBookings = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10 bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen">
+    <div className="max-w-7xl mx-auto px-3 sm:px-4 py-6 sm:py-10  min-h-screen">
       {/* Header Section */}
       <div className="text-center mb-8 sm:mb-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-white mb-3 sm:mb-4">

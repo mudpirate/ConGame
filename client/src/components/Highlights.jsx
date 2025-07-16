@@ -78,7 +78,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="flex justify-center items-center mt-6 sm:mt-8">
-          <button className="bg-white text-black font-bold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-gray-200 transition-colors duration-200 shadow-lg text-sm sm:text-base">
+          <button className="bg-green-400 text-black font-bold px-6 sm:px-8 py-2 sm:py-3 rounded-full hover:bg-gray-200 transition-colors duration-200 shadow-lg text-sm sm:text-base">
             Explore more...
           </button>
         </div>
