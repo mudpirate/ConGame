@@ -98,6 +98,9 @@ export const AppProvider = ({ children }) => {
       setToken(storedToken);
       attachTokenToAxios(storedToken);
     }
+  }, []);
+
+  useEffect(() => {
     fetchGames();
   }, []);
 
