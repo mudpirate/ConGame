@@ -10,6 +10,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const currency = import.meta.env.VITE_CURRENCY;
+  const [gamesLoading, setGamesLoading] = useState(true);
   const [token, setToken] = useState(null);
   const [user, setUser] = useState(null);
   const [isOwner, setIsOwner] = useState(false);
@@ -45,11 +46,14 @@ export const AppProvider = ({ children }) => {
 
   // 🎮 Fetch all games
   const fetchGames = async () => {
+    setGamesLoading(true);
     try {
       const { data } = await axios.get("/api/user/games");
       data.success ? setGames(data.games) : toast.error(data.message);
     } catch (error) {
       toast.error("Unable to load games");
+    } finally {
+      setGamesLoading(false);
     }
   };
 
@@ -117,6 +121,7 @@ export const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         currency,
+        gamesLoading,
         axios,
         user,
         setUser,

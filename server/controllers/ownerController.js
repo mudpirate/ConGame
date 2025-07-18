@@ -53,7 +53,7 @@ export const addGame = async (req, res, next) => {
     }
 
     const gameData = JSON.parse(req.body.formData);
-    const image = await uploadToImageKit(req.file, "/games");
+    const image = await uploadToImageKit(req.file, "/games"); // or const image = req.file without imagekit
 
     await Game.create({ ...gameData, owner: req.user._id, image });
 

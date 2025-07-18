@@ -11,7 +11,7 @@ const Games = () => {
   const pickupDate = searchParams.get("pickupDate");
   const returnDate = searchParams.get("returnDate");
 
-  const { games, axios } = useAppContext();
+  const { games, axios, gamesLoading } = useAppContext();
 
   const isSearchData = pickupLocation && pickupDate && returnDate;
 
@@ -40,8 +40,8 @@ const Games = () => {
   }, [pickupLocation, pickupDate, returnDate]);
 
   useEffect(() => {
-    if (!isSearchData) setFilteredGames(games || []);
-  }, [games, isSearchData]);
+    if (!isSearchData && !gamesLoading) setFilteredGames(games || []);
+  }, [games, isSearchData, gamesLoading]);
 
   const [input, setInput] = useState("");
 
@@ -95,7 +95,9 @@ const Games = () => {
         games
       </div>
 
-      {displayedGames.length === 0 ? (
+      {gamesLoading ? (
+        <div className="text-white text-center py-10">Loading games...</div>
+      ) : displayedGames.length === 0 ? (
         <div className="text-center py-12 sm:py-16">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 max-w-md mx-auto">
             <div className="w-16 h-16 bg-gradient-to-r from-gray-500/20 to-gray-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
