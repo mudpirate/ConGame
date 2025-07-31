@@ -22,6 +22,10 @@ app.get("/", (req, res, next) => {
   res.send("Server is running");
 });
 
+app.get("/ping", (req, res) => {
+  res.status(200).send("OK");
+});
+
 app.use("/api/user", router);
 app.use("/api/owner", ownerRouter);
 app.use("/api/bookings", bookingRouter);
