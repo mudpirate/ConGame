@@ -12,9 +12,10 @@ const Footer = () => {
             ConGame
           </h1>
           <p className="mt-6 text-sm">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            ConGame is your ultimate destination for renting top-tier gaming
+            consoles at unbeatable prices. Whether you're into casual gaming or
+            hardcore battles, we make it easy to play your favorite titles
+            without the cost of ownership. Rent. Play. Return — all hassle-free.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <img
@@ -56,9 +57,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="pt-4 text-center text-sm pb-5">
-        Copyright {new Date().getFullYear()} © PreBuiltUI. All Right Reserved.
-      </p>
+      <p className="pt-4 text-center text-sm pb-5">Made with ❤️ by Nomesh</p>
     </footer>
   );
 };

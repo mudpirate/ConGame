@@ -42,7 +42,7 @@ const GameCard = ({ game }) => {
       <div className="p-4 sm:p-6">
         {/* Game Title */}
         <div className="mb-3 sm:mb-4">
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1">
+          <h3 className="text-md lg:text-lg font-bold text-white mb-1">
             {game.brand} {game.model}
           </h3>
           <p className="text-gray-300 text-xs sm:text-sm">

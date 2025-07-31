@@ -74,7 +74,7 @@ const ManageBookings = () => {
 
   if (loading) {
     return (
-      <div className="px-3 sm:px-4 w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen py-6 sm:py-10">
+      <div className="px-3 sm:px-4 w-full bg-black min-h-screen py-6 sm:py-10">
         <div className="flex items-center justify-center h-48 sm:h-64">
           <div className="animate-spin rounded-full h-10 w-10 sm:h-12 sm:w-12 border-b-2 border-blue-500"></div>
         </div>
@@ -84,7 +84,7 @@ const ManageBookings = () => {
 
   if (error) {
     return (
-      <div className="px-3 sm:px-4 w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen py-6 sm:py-10">
+      <div className="px-3 sm:px-4 w-full bg-black min-h-screen py-6 sm:py-10">
         <Title
           title="Manage Bookings"
           subTitle="View, edit, or remove your listed bookings."
@@ -127,7 +127,7 @@ const ManageBookings = () => {
   }
 
   return (
-    <div className="px-3 sm:px-4 w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen py-6 sm:py-10">
+    <div className="px-3 sm:px-4 w-full bg-black min-h-screen py-6 sm:py-10">
       <Title
         title="Manage Bookings"
         subTitle="View, edit, or remove your listed bookings."
