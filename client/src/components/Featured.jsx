@@ -22,7 +22,6 @@ const Featured = () => {
           </p>
         </div>
 
-<<<<<<< HEAD
         {gamesLoading ? (
           <div className="  rounded-2xl text-xl h-1/2 flex items-center justify-center text-white text-center  overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
             <div className="w-1/3 rounded-xl bg-white/10 py-10 ">
@@ -38,13 +37,6 @@ const Featured = () => {
                   <GameCard game={game} />
                 </div>
               ))}
-=======
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-          {games.slice(0, 3).map((game) => (
-            <div key={game._id}>
-              <GameCard game={game} />
->>>>>>> da7f40701722d7ce91b99f0cf8d6af6c9c703b9e
             </div>
 
             {/* View All Button */}
