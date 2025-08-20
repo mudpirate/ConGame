@@ -76,13 +76,13 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white-500"
               onClick={() => setOpen(!open)}
             >
               <img
                 src={open ? assets.close_icon : assets.menu_icon}
                 alt="menu"
-                className="h-6 w-6"
+                className="h-6 w-6  "
               />
             </button>
           </div>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 isOwner ? navigate("/owner") : changeRole();
                 setOpen(false);
               }}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
+              className="w-full bg-white text-black hover:bg-gray-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
             >
               {isOwner ? "Dashboard" : "List Games"}
             </button>
