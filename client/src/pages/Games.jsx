@@ -96,7 +96,9 @@ const Games = () => {
       </div>
 
       {gamesLoading ? (
-        <div className="text-white text-center py-10">Loading games...</div>
+        <div className="text-white text-center  mx-auto max-w-72 bg-white/10 backdrop-blur-lg px-3 rounded-xl text-2xl py-10">
+          Loading games....
+        </div>
       ) : displayedGames.length === 0 ? (
         <div className="text-center py-12 sm:py-16">
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 max-w-md mx-auto">

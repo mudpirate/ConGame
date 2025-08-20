@@ -10,7 +10,7 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const currency = import.meta.env.VITE_CURRENCY;
-  const [gamesLoading, setGamesLoading] = useState(true);
+  const [gamesLoading, setGamesLoading] = useState(false);
   const [token, setToken] = useState(null);
   const [user, setUser] = useState(null);
   const [isOwner, setIsOwner] = useState(false);
